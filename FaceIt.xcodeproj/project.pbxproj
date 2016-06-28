@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30055E901D178FB40073DE82 /* VCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30055E8F1D178FB40073DE82 /* VCL.swift */; };
+		304DF6171CF056330007B1C0 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DF6161CF056330007B1C0 /* FacialExpression.swift */; };
 		309E1C641CEDEBF50051D4B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E1C631CEDEBF50051D4B1 /* AppDelegate.swift */; };
-		309E1C661CEDEBF50051D4B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E1C651CEDEBF50051D4B1 /* ViewController.swift */; };
+		309E1C661CEDEBF50051D4B1 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E1C651CEDEBF50051D4B1 /* FaceViewController.swift */; };
 		309E1C691CEDEBF50051D4B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309E1C671CEDEBF50051D4B1 /* Main.storyboard */; };
 		309E1C6B1CEDEBF50051D4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309E1C6A1CEDEBF50051D4B1 /* Assets.xcassets */; };
 		309E1C6E1CEDEBF50051D4B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309E1C6C1CEDEBF50051D4B1 /* LaunchScreen.storyboard */; };
+		309E1C761CEDEDC40051D4B1 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E1C751CEDEDC40051D4B1 /* FaceView.swift */; };
+		30ED99D11CF3480300665F41 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED99D01CF3480300665F41 /* EmotionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30055E8F1D178FB40073DE82 /* VCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCL.swift; sourceTree = "<group>"; };
+		304DF6161CF056330007B1C0 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		309E1C601CEDEBF50051D4B1 /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309E1C631CEDEBF50051D4B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		309E1C651CEDEBF50051D4B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		309E1C651CEDEBF50051D4B1 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		309E1C681CEDEBF50051D4B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		309E1C6A1CEDEBF50051D4B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		309E1C6D1CEDEBF50051D4B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		309E1C6F1CEDEBF50051D4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309E1C751CEDEDC40051D4B1 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		30ED99D01CF3480300665F41 /* EmotionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		304659EE1CF1FE0B00592474 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				309E1C631CEDEBF50051D4B1 /* AppDelegate.swift */,
+				309E1C6A1CEDEBF50051D4B1 /* Assets.xcassets */,
+				309E1C6C1CEDEBF50051D4B1 /* LaunchScreen.storyboard */,
+				309E1C6F1CEDEBF50051D4B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		309E1C571CEDEBF50051D4B1 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +73,13 @@
 		309E1C621CEDEBF50051D4B1 /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
-				309E1C631CEDEBF50051D4B1 /* AppDelegate.swift */,
-				309E1C651CEDEBF50051D4B1 /* ViewController.swift */,
 				309E1C671CEDEBF50051D4B1 /* Main.storyboard */,
-				309E1C6A1CEDEBF50051D4B1 /* Assets.xcassets */,
-				309E1C6C1CEDEBF50051D4B1 /* LaunchScreen.storyboard */,
-				309E1C6F1CEDEBF50051D4B1 /* Info.plist */,
+				309E1C651CEDEBF50051D4B1 /* FaceViewController.swift */,
+				30ED99D01CF3480300665F41 /* EmotionsViewController.swift */,
+				309E1C751CEDEDC40051D4B1 /* FaceView.swift */,
+				304DF6161CF056330007B1C0 /* FacialExpression.swift */,
+				30055E8F1D178FB40073DE82 /* VCL.swift */,
+				304659EE1CF1FE0B00592474 /* Supporting Files */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -136,8 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309E1C661CEDEBF50051D4B1 /* ViewController.swift in Sources */,
+				309E1C661CEDEBF50051D4B1 /* FaceViewController.swift in Sources */,
+				304DF6171CF056330007B1C0 /* FacialExpression.swift in Sources */,
+				30ED99D11CF3480300665F41 /* EmotionsViewController.swift in Sources */,
+				30055E901D178FB40073DE82 /* VCL.swift in Sources */,
 				309E1C641CEDEBF50051D4B1 /* AppDelegate.swift in Sources */,
+				309E1C761CEDEDC40051D4B1 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +278,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangqi.FaceIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -265,6 +290,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangqi.FaceIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -287,6 +313,7 @@
 				309E1C741CEDEBF50051D4B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
