@@ -38,6 +38,6 @@ class EmotionsViewController: UIViewController {
         }
     }
     
-    let instance = getEmotionsMVCinstanceCount()
+    //let instance = getEmotionsMVCinstanceCount()
     
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		30055E901D178FB40073DE82 /* VCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30055E8F1D178FB40073DE82 /* VCL.swift */; };
+		303AADBE1D37358900A9F605 /* BlinkingFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AADBD1D37358900A9F605 /* BlinkingFaceViewController.swift */; };
+		303AADC01D3737BA00A9F605 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AADBF1D3737BA00A9F605 /* EyeView.swift */; };
 		304DF6171CF056330007B1C0 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DF6161CF056330007B1C0 /* FacialExpression.swift */; };
 		309E1C641CEDEBF50051D4B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E1C631CEDEBF50051D4B1 /* AppDelegate.swift */; };
 		309E1C661CEDEBF50051D4B1 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E1C651CEDEBF50051D4B1 /* FaceViewController.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		30055E8F1D178FB40073DE82 /* VCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCL.swift; sourceTree = "<group>"; };
+		303AADBD1D37358900A9F605 /* BlinkingFaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkingFaceViewController.swift; sourceTree = "<group>"; };
+		303AADBF1D3737BA00A9F605 /* EyeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
 		304DF6161CF056330007B1C0 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		309E1C601CEDEBF50051D4B1 /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309E1C631CEDEBF50051D4B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 				309E1C6A1CEDEBF50051D4B1 /* Assets.xcassets */,
 				309E1C6C1CEDEBF50051D4B1 /* LaunchScreen.storyboard */,
 				309E1C6F1CEDEBF50051D4B1 /* Info.plist */,
+				30055E8F1D178FB40073DE82 /* VCL.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -74,11 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				309E1C671CEDEBF50051D4B1 /* Main.storyboard */,
-				309E1C651CEDEBF50051D4B1 /* FaceViewController.swift */,
+				303AADBD1D37358900A9F605 /* BlinkingFaceViewController.swift */,
 				30ED99D01CF3480300665F41 /* EmotionsViewController.swift */,
+				309E1C651CEDEBF50051D4B1 /* FaceViewController.swift */,
+				303AADBF1D3737BA00A9F605 /* EyeView.swift */,
 				309E1C751CEDEDC40051D4B1 /* FaceView.swift */,
 				304DF6161CF056330007B1C0 /* FacialExpression.swift */,
-				30055E8F1D178FB40073DE82 /* VCL.swift */,
 				304659EE1CF1FE0B00592474 /* Supporting Files */,
 			);
 			path = FaceIt;
@@ -160,7 +166,9 @@
 				304DF6171CF056330007B1C0 /* FacialExpression.swift in Sources */,
 				30ED99D11CF3480300665F41 /* EmotionsViewController.swift in Sources */,
 				30055E901D178FB40073DE82 /* VCL.swift in Sources */,
+				303AADBE1D37358900A9F605 /* BlinkingFaceViewController.swift in Sources */,
 				309E1C641CEDEBF50051D4B1 /* AppDelegate.swift in Sources */,
+				303AADC01D3737BA00A9F605 /* EyeView.swift in Sources */,
 				309E1C761CEDEDC40051D4B1 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

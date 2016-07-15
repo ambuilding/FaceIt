@@ -5,7 +5,7 @@
 //  Created by WangQi on 16/6/20.
 //  Copyright © 2016年 WangQi. All rights reserved.
 //
-
+/*
 import UIKit
 
 private var faceMVCinstanceCount = 0
@@ -130,3 +130,5 @@ extension EmotionsViewController
         })
     }
 }
+
+*/

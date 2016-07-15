@@ -65,15 +65,55 @@ class FaceViewController: UIViewController {
     @IBAction func toggleEyes(recognizer: UITapGestureRecognizer) {
         if recognizer.state == .Ended {
             switch expression.eyes {
-            case .Open:
-                expression.eyes = .Closed
-            case .Closed:
-                expression.eyes = .Open
-            case .Squinting:
-                break // we don't know how to toggle "Squinting"
+            case .Open: expression.eyes = .Closed
+            case .Closed: expression.eyes = .Open
+            case .Squinting: break // we don't know how to toggle "Squinting"
             }
         }
     }
+    
+    private struct Animation {
+        static let ShakeAngle = CGFloat(M_PI/6)
+        static let ShakeDuration = 0.5
+    }
+    
+    @IBAction func headShake(sender: UITapGestureRecognizer) {
+        
+        UIView.animateWithDuration(
+            Animation.ShakeDuration,
+            animations: {
+                self.faceView.transform = CGAffineTransformRotate(self.faceView.transform, Animation.ShakeAngle)
+            },
+            completion: { finished in
+                if finished {
+                    UIView.animateWithDuration(
+                        Animation.ShakeDuration,
+                        animations: {
+                            self.faceView.transform = CGAffineTransformRotate(self.faceView.transform, -Animation.ShakeAngle*2)
+                        },
+                        completion: { finished in
+                            if finished {
+                                UIView.animateWithDuration(
+                                    Animation.ShakeDuration,
+                                    animations: {
+                                        self.faceView.transform = CGAffineTransformRotate(self.faceView.transform, Animation.ShakeAngle)
+                                    },
+                                    completion: { finished in
+                                        if finished {
+                                            
+                                        }
+                                    }
+                                )
+
+                            }
+                        }
+                    )
+
+                }
+            }
+        )
+    }
+    
     
     // here the Controller is doing its job
     // of interpreting the Model (expression) for the View (faceView)
@@ -82,12 +122,9 @@ class FaceViewController: UIViewController {
 
         if faceView != nil {
             switch expression.eyes {
-            case .Open:
-                faceView.eyesOpen = true
-            case .Closed:
-                faceView.eyesOpen = false
-            case .Squinting:
-                faceView.eyesOpen = false
+            case .Open: faceView.eyesOpen = true
+            case .Closed: faceView.eyesOpen = false
+            case .Squinting: faceView.eyesOpen = false
             }
             
             faceView.mouthCurvature = mouthCurvatures[expression.mouth] ?? 0.0
@@ -131,7 +168,7 @@ class FaceViewController: UIViewController {
         }
     }
     
-    let instance = getFaceMVCinstanceCount()
+    //let instance = getFaceMVCinstanceCount()
     
 }
 

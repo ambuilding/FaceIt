@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Emotions-->
@@ -82,24 +81,8 @@
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1JZ-O7-kql" customClass="FaceView" customModule="FaceIt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KO-Rb-phS">
-                                        <rect key="frame" x="552" y="562" width="42" height="30"/>
-                                        <state key="normal" title="Frown"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0q9-wJ-J3F">
-                                        <rect key="frame" x="8" y="562" width="38" height="30"/>
-                                        <state key="normal" title="Smile"/>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="0q9-wJ-J3F" firstAttribute="baseline" secondItem="6KO-Rb-phS" secondAttribute="baseline" id="8PX-ba-UwN"/>
-                                    <constraint firstItem="0q9-wJ-J3F" firstAttribute="leading" secondItem="1JZ-O7-kql" secondAttribute="leadingMargin" id="U3T-GU-f41"/>
-                                    <constraint firstItem="0q9-wJ-J3F" firstAttribute="bottom" secondItem="1JZ-O7-kql" secondAttribute="bottomMargin" id="Xri-K0-DF2"/>
-                                    <constraint firstAttribute="trailing" secondItem="6KO-Rb-phS" secondAttribute="trailing" constant="6" id="c5c-1Z-en9"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
                                         <color key="value" red="0.93321314099999997" green="0.6028568111" blue="0.44130222479999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -129,11 +112,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Ger-fT-OL9">
                     <connections>
-                        <action selector="toggleEyes:" destination="BYZ-38-t0r" id="Wht-lM-Jhq"/>
+                        <action selector="headShake:" destination="BYZ-38-t0r" id="1XB-Yd-xFs"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="789" y="-50"/>
+            <point key="canvasLocation" x="792" y="-42"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Stx-T1-Bg8">
@@ -186,6 +169,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RPz-R3-URI"/>
+        <segue reference="8Sf-ah-TVv"/>
     </inferredMetricsTieBreakers>
 </document>
