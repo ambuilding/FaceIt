@@ -8,7 +8,7 @@
         <!--Emotions-->
         <scene sceneID="049-6h-gcT">
             <objects>
-                <viewController id="1pa-0c-Oqo" sceneMemberID="viewController">
+                <viewController id="1pa-0c-Oqo" customClass="EmotionsViewController" customModule="FaceIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Eh-Mv-li3"/>
                         <viewControllerLayoutGuide type="bottom" id="lzy-xa-Xj0"/>
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="67" y="-831"/>
         </scene>
-        <!--Face View Controller-->
+        <!--Blinking Face View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FaceViewController" customModule="FaceIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BlinkingFaceViewController" customModule="FaceIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -169,6 +169,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8Sf-ah-TVv"/>
+        <segue reference="kUQ-hm-s22"/>
     </inferredMetricsTieBreakers>
 </document>

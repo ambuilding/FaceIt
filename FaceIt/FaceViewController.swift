@@ -12,7 +12,7 @@ class FaceViewController: UIViewController {
 
     // MARK: Model
     
-    var expression =  FacialExpression(eyes: .Closed, eyeBrows: .Normal, mouth: .Smirk) {
+    var expression =  FacialExpression(eyes: .Closed, eyeBrows: .Normal, mouth: .Smile) {
         didSet {
             updateUI() // Model changed, so update the view
         }
